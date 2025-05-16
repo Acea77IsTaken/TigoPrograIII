@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="Seleccion_de_Planes_de_tigo.UserControls.PlanesBase"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Seleccion_de_Planes_de_tigo.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="370" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="PLANES" FontSize="30" HorizontalAlignment="Center" Foreground="#FF00C8FF" TextDecorations="Underline"/>
+        <UniformGrid Columns="3" Rows="1" Grid.Row="1">
+            <!--#region Plan Basico-->
+            <Border BorderThickness="1" BorderBrush="#FFA7A7A7" CornerRadius="10" Margin="10">
+                <StackPanel >
+                    <Border Background="#FF00C8FF" Height="6" CornerRadius="10,10,0,0" Width="auto"/>
+                    <Label Content="PLAN INTERNET + TV BASICO" FontSize="15" HorizontalAlignment="Center" Foreground="#FF00377B" Margin="0,20,0,0"/>
+                    <TextBlock Text="Internet de 100 Mbps + TV en HD" FontSize="40" HorizontalAlignment="Center" 
+                               Foreground="#FF00377B" TextWrapping="Wrap" TextAlignment="Center" FontWeight="DemiBold"/>
+                    <TextBlock Text="Bs 215.00" FontSize="20" HorizontalAlignment="Center" Foreground="#FF00377B" Margin="0,5,0,-6"/>
+                    <Label Content="Precio Mensual" HorizontalAlignment="Center" Foreground="#FF00377B" FontSize="10"/>
+                    <Border Background="#FF00C7FF" HorizontalAlignment="Center" CornerRadius="10" Margin="0,0,0,15">
+                        <Label Content="PIDELO AHORA" Foreground="AliceBlue" FontWeight="DemiBold"/>
+                    </Border>
+                </StackPanel>
+            </Border>
+<!--#endregion-->
+            
+            <!--#region Plan Intermedio-->
+            <Border BorderThickness="1" BorderBrush="#FFA7A7A7" CornerRadius="10" Margin="10">
+                <StackPanel >
+                    <Border Background="#FF00C8FF" Height="6" CornerRadius="10,10,0,0" Width="auto"/>
+                    <Label Content="PLAN INTERNET + TV INICIAL PLUS" FontSize="15" HorizontalAlignment="Center" Foreground="#FF00377B" Margin="0,20,0,0"/>
+                    <TextBlock Text="Internet de 150 Mbps + TV en HD" FontSize="40" HorizontalAlignment="Center" 
+                   Foreground="#FF00377B" TextWrapping="Wrap" TextAlignment="Center" FontWeight="DemiBold"/>
+                    <TextBlock Text="Bs 255.00" FontSize="20" HorizontalAlignment="Center" Foreground="#FF00377B" Margin="0,5,0,-6"/>
+                    <Label Content="Precio Mensual" HorizontalAlignment="Center" Foreground="#FF00377B" FontSize="10"/>
+                    <Border Background="#FF00C7FF" HorizontalAlignment="Center" CornerRadius="10" Margin="0,0,0,15">
+                        <Label Content="PIDELO AHORA" Foreground="AliceBlue" FontWeight="DemiBold"/>
+                    </Border>
+                </StackPanel>
+            </Border>
+            <!--#endregion-->
+            
+            <!--#region plan Avanzado-->
+            <Border BorderThickness="1" BorderBrush="#FFA7A7A7" CornerRadius="10" Margin="10">
+                <StackPanel >
+                    <Border Background="#FF00C8FF" Height="6" CornerRadius="10,10,0,0" Width="auto"/>
+                    <Label Content="PLAN FULL TIGO + TV INCIAL PLUS" FontSize="15" HorizontalAlignment="Center" Foreground="#FF00377B" Margin="0,20,0,0"/>
+                    <TextBlock Text="Internet de 500 Mbps + TV en HD" FontSize="40" HorizontalAlignment="Center" 
+                   Foreground="#FF00377B" TextWrapping="Wrap" TextAlignment="Center" FontWeight="DemiBold"/>
+                    <TextBlock Text="Bs 385.00" FontSize="20" HorizontalAlignment="Center" Foreground="#FF00377B" Margin="0,5,0,-6"/>
+                    <Label Content="Valor Final" HorizontalAlignment="Center" Foreground="#FF00377B" FontSize="10"/>
+                    <Border Background="#FF00C7FF" HorizontalAlignment="Center" CornerRadius="10" Margin="0,0,0,15">
+                        <Label Content="PIDELO AHORA" Foreground="AliceBlue" FontWeight="DemiBold"/>
+                    </Border>
+                </StackPanel>
+            </Border>
+            <!--#endregion-->
+        </UniformGrid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,72 @@
+﻿<Window x:Class="Seleccion_de_Planes_de_tigo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Seleccion_de_Planes_de_tigo"
+        mc:Ignorable="d"
+        Title="Tigo" Height="450" Width="825">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Background="#FF00377B">
+            <StackPanel Orientation="Horizontal" Height="40" VerticalAlignment="Center">
+                <Label Content="Tigo" Foreground="White" VerticalAlignment="Center" FontSize="20" Margin="10,0"/>
+                <UniformGrid Width="auto" Rows="1" Columns="4" VerticalAlignment="Center">
+                    <Label Content="Movil" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" x:Name="BtnMovil" MouseLeftButtonUp="ToggleSubMenu"/>
+                    <Label Content="Television" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" x:Name="BtnTelevision" MouseLeftButtonUp="ToggleSubMenu"/>
+                    <Label Content="Internet" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" x:Name="BtnInternet"/>
+                    <Label Content="Planes" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" x:Name="BtnPlanes" MouseLeftButtonUp="LlevarAPlanes"/>
+                </UniformGrid>
+            </StackPanel>
+        </Border>
+
+        <Border x:Name="SubMenu" Grid.Row="1" Background="#EEE" Height="0" VerticalAlignment="Top" BorderThickness="0,1" BorderBrush="DarkGray">
+            <StackPanel x:Name="SubMenuContent" Orientation="Horizontal"/>
+        </Border>
+        
+    <UserControl Grid.Row="2" VerticalAlignment="Center" Height="370" x:Name="UserControlMain">
+        
+    </UserControl>
+    </Grid>
+
+
+
+ <!--#region Cosas de las animaciones-->
+    <Window.Resources>
+        <!-- abrir -->
+        <Storyboard x:Key="OpenSubMenu">
+            <DoubleAnimation
+            Storyboard.TargetName="SubMenu"
+            Storyboard.TargetProperty="Height"
+            From="0" To="50"
+            Duration="0:0:0.3"
+            DecelerationRatio="0.5">
+                <DoubleAnimation.EasingFunction>
+                    <QuadraticEase EasingMode="EaseOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            
+        </Storyboard>
+
+        <!--cerrar -->
+        <Storyboard x:Key="CloseSubMenu">
+            <DoubleAnimation
+            Storyboard.TargetName="SubMenu"
+            Storyboard.TargetProperty="Height"
+            From="50" To="0"
+            Duration="0:0:0.2"
+            AccelerationRatio="0.5">
+                <DoubleAnimation.EasingFunction>
+                    <QuadraticEase EasingMode="EaseOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+    </Window.Resources>
+    
+    <!--#endregion-->
+</Window>
