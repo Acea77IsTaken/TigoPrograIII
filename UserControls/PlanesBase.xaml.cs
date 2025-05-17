@@ -24,5 +24,32 @@ namespace Seleccion_de_Planes_de_tigo.UserControls
         {
             InitializeComponent();
         }
+
+        private void Click_PlanB(object sender, MouseButtonEventArgs e)
+        {
+            App.Navegador.NavegarA(new DetallesB());
+        }
+
+        private void Click_PlanM(object sender, MouseButtonEventArgs e)
+        {
+            App.Navegador.NavegarA(new PlanesM());
+        }
+
+        private void Click_PlanA(object sender, MouseButtonEventArgs e)
+        {
+            App.Navegador.NavegarA(new DetallesA());
+        }
+
+        private void Mouse_hover(object sender, MouseEventArgs e)
+        {
+            Border button = sender as Border;
+            button.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF009ECA"));
+        }
+
+        private void Mouse_Leave(object sender, MouseEventArgs e)
+        {
+            Border button = sender as Border;
+            button.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF00C7FF"));
+        }
     }
 }

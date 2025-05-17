@@ -25,6 +25,7 @@ namespace Seleccion_de_Planes_de_tigo
         public MainWindow()
         {
             InitializeComponent();
+            App.Navegador.VistaCambiada += (vista) => UserControlMain.Content = vista;
         }
 
         private bool _isSubMenuOpen = false;

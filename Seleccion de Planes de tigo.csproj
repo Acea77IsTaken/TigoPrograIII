@@ -55,6 +55,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Decorators\HBODecorator.cs" />
+    <Compile Include="Decorators\HotPackDecorator.cs" />
+    <Compile Include="Decorators\NetflixDecorator.cs" />
+    <Compile Include="Decorators\PlanDecorator.cs" />
+    <Compile Include="Decorators\PrimeVideoDecorator.cs" />
+    <Compile Include="Interfaces\Plan.cs" />
+    <Compile Include="ObjetosConcretos\PlanBasico.cs" />
+    <Compile Include="Singletons\Navegacion.cs" />
     <Compile Include="UserControls\DetallesA.xaml.cs">
       <DependentUpon>DetallesA.xaml</DependentUpon>
     </Compile>

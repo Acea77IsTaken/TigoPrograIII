@@ -22,7 +22,7 @@
                                Foreground="#FF00377B" TextWrapping="Wrap" TextAlignment="Center" FontWeight="DemiBold"/>
                     <TextBlock Text="Bs 215.00" FontSize="20" HorizontalAlignment="Center" Foreground="#FF00377B" Margin="0,5,0,-6"/>
                     <Label Content="Precio Mensual" HorizontalAlignment="Center" Foreground="#FF00377B" FontSize="10"/>
-                    <Border Background="#FF00C7FF" HorizontalAlignment="Center" CornerRadius="10" Margin="0,0,0,15">
+                    <Border Background="#FF00C7FF" HorizontalAlignment="Center" CornerRadius="10" Margin="0,0,0,15" x:Name="BtnPedirB" MouseLeftButtonDown="Click_PlanB" MouseEnter="Mouse_hover" MouseLeave="Mouse_Leave">
                         <Label Content="PIDELO AHORA" Foreground="AliceBlue" FontWeight="DemiBold"/>
                     </Border>
                 </StackPanel>
@@ -38,7 +38,7 @@
                    Foreground="#FF00377B" TextWrapping="Wrap" TextAlignment="Center" FontWeight="DemiBold"/>
                     <TextBlock Text="Bs 255.00" FontSize="20" HorizontalAlignment="Center" Foreground="#FF00377B" Margin="0,5,0,-6"/>
                     <Label Content="Precio Mensual" HorizontalAlignment="Center" Foreground="#FF00377B" FontSize="10"/>
-                    <Border Background="#FF00C7FF" HorizontalAlignment="Center" CornerRadius="10" Margin="0,0,0,15">
+                    <Border Background="#FF00C7FF" HorizontalAlignment="Center" CornerRadius="10" Margin="0,0,0,15" x:Name="BtnPedirM" MouseLeftButtonDown="Click_PlanM" MouseEnter="Mouse_hover" MouseLeave="Mouse_Leave">
                         <Label Content="PIDELO AHORA" Foreground="AliceBlue" FontWeight="DemiBold"/>
                     </Border>
                 </StackPanel>
@@ -54,7 +54,7 @@
                    Foreground="#FF00377B" TextWrapping="Wrap" TextAlignment="Center" FontWeight="DemiBold"/>
                     <TextBlock Text="Bs 385.00" FontSize="20" HorizontalAlignment="Center" Foreground="#FF00377B" Margin="0,5,0,-6"/>
                     <Label Content="Valor Final" HorizontalAlignment="Center" Foreground="#FF00377B" FontSize="10"/>
-                    <Border Background="#FF00C7FF" HorizontalAlignment="Center" CornerRadius="10" Margin="0,0,0,15">
+                    <Border Background="#FF00C7FF" HorizontalAlignment="Center" CornerRadius="10" Margin="0,0,0,15" x:Name="BtnPedirA" MouseLeftButtonDown="Click_PlanA" MouseEnter="Mouse_hover" MouseLeave="Mouse_Leave">
                         <Label Content="PIDELO AHORA" Foreground="AliceBlue" FontWeight="DemiBold"/>
                     </Border>
                 </StackPanel>
