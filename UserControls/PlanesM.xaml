@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="Seleccion_de_Planes_de_tigo.UserControls.DetallesB"
+﻿<UserControl x:Class="Seleccion_de_Planes_de_tigo.UserControls.PlanesM"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -13,19 +13,19 @@
                 <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Column="0">
-                <TextBlock Text="PLAN TIGO INICIAL INTERNET 100 MBPS + TV en HD" FontSize="27"
-                           Foreground="#FF00377B" TextWrapping="Wrap" TextAlignment="Left" FontWeight="DemiBold" Margin="10,10"/>
-                <TextBlock Text="Bs 215.00" FontSize="27"  Foreground="#FF00377B" Margin="10,0"/>
+                <TextBlock Text="PLAN TIGO MEDIO INTERNET 150 MBPS + TV en HD" FontSize="27"
+                       Foreground="#FF00377B" TextWrapping="Wrap" TextAlignment="Left" FontWeight="DemiBold" Margin="10,10"/>
+                <TextBlock Text="Bs 255.00" FontSize="27"  Foreground="#FF00377B" Margin="10,0"/>
                 <Label Content="Precio Mensual" Foreground="#FF787878" FontSize="23"/>
                 <Separator Margin="0,10" Background="DarkGray" Height="1"/>
                 <Label Content="Caracteristicas del plan" Foreground="#FF787878" FontSize="23"/>
                 <Label Content="Internet" Foreground="#FF00377B" FontSize="23" FontWeight="DemiBold"/>
-                <TextBlock Text="Internet de 100 Mbps" FontSize="17" Foreground="#FF787878" Margin="10,5"/>
+                <TextBlock Text="Internet de 150 Mbps" FontSize="17" Foreground="#FF787878" Margin="10,5"/>
                 <TextBlock Text="Modem WiFi" FontSize="17" Foreground="#FF787878" Margin="10,5"/>
-                <Label Content="Movil" Foreground="#FF00377B" FontSize="23" FontWeight="DemiBold"/>
-                <TextBlock Text="42 canales SD" FontSize="17" Foreground="#FF787878" Margin="10,5"/>
-                <TextBlock Text="24 canales HD" FontSize="17" Foreground="#FF787878" Margin="10,5"/>
-                <TextBlock Text="10 canales de música digital" FontSize="17" Foreground="#FF787878" Margin="10,5"/>
+                <Label Content="Television" Foreground="#FF00377B" FontSize="23" FontWeight="DemiBold"/>
+                <TextBlock Text="94 canales SD" FontSize="17" Foreground="#FF787878" Margin="10,5"/>
+                <TextBlock Text="48 canales HD" FontSize="17" Foreground="#FF787878" Margin="10,5"/>
+                <TextBlock Text="50 canales de música digital" FontSize="17" Foreground="#FF787878" Margin="10,5"/>
                 <TextBlock Text="Tigo Sports app" FontSize="17" Foreground="#FF787878" Margin="10,5"/>
             </StackPanel>
             <!---->
@@ -58,17 +58,17 @@
 
                 <StackPanel>
                     <TextBlock Text="Rellene sus datos para comprar" FontSize="27"
-                               Foreground="#FF00377B" TextWrapping="Wrap" TextAlignment="Left" FontWeight="DemiBold" Margin="10,5"/>
+                           Foreground="#FF00377B" TextWrapping="Wrap" TextAlignment="Left" FontWeight="DemiBold" Margin="10,5"/>
                     <Separator Margin="0,10" Background="DarkGray" Height="1"/>
                     <Label Content="Nombre y Apellido" Foreground="#FF787878" FontSize="17" Margin="15,-7"/>
                     <TextBox  x:Name="TbxNombre" Width="300" HorizontalAlignment="Left" Height="28" Margin="15,5"
-                              Background="{x:Null}" SelectionBrush="{x:Null}" />
+                          Background="{x:Null}" SelectionBrush="{x:Null}" />
                     <Label Content="Email" Foreground="#FF787878" FontSize="17" Margin="15,-7"/>
                     <TextBox  x:Name="TbxEmail" Width="300" HorizontalAlignment="Left" Height="28" Margin="15,5"
-                              Background="{x:Null}" SelectionBrush="{x:Null}" />
+                          Background="{x:Null}" SelectionBrush="{x:Null}" />
                     <Label Content="Numero de Telefono" Foreground="#FF787878" FontSize="17" Margin="15,-7"/>
                     <TextBox  x:Name="TbxTelefono" Width="300" HorizontalAlignment="Left" Height="28" Margin="15,5"
-                              Background="{x:Null}" SelectionBrush="{x:Null}" />
+                          Background="{x:Null}" SelectionBrush="{x:Null}" />
                     <StackPanel Orientation="Horizontal">
                         <Border Background="White" CornerRadius="15" Margin="15,5,75,5" BorderThickness="1.5" BorderBrush="#FF00C8FF">
                             <Label Content="CANCELAR" Foreground="#FF00C8FF" FontWeight="Black" VerticalAlignment="Center"/>

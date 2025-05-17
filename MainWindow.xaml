@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Seleccion_de_Planes_de_tigo"
         mc:Ignorable="d"
-        Title="Tigo" Height="450" Width="825">
+        Title="Tigo" Height="450" Width="840">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>

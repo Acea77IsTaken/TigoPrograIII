@@ -55,11 +55,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="UserControls\DetallesA.xaml.cs">
+      <DependentUpon>DetallesA.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\DetallesB.xaml.cs">
       <DependentUpon>DetallesB.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\PlanesBase.xaml.cs">
       <DependentUpon>PlanesBase.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PlanesM.xaml.cs">
+      <DependentUpon>PlanesM.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -73,11 +79,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UserControls\DetallesA.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControls\DetallesB.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\PlanesBase.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\PlanesM.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -107,6 +121,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\amazonprimelogo.png" />
+    <Resource Include="Assets\disneypluslogo.png" />
+    <Resource Include="Assets\HBO_logo.svg.png" />
+    <Resource Include="Assets\Logonetflix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\HotpackLogo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
