@@ -13,9 +13,9 @@
                 <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Column="0">
-                <TextBlock Text="PLAN TIGO INICIAL INTERNET 100 MBPS + TV en HD" FontSize="27"
+                <TextBlock Text="PLAN TIGO INICIAL INTERNET 100 MBPS + TV en HD" FontSize="27" x:Name="txtTitulo"
                            Foreground="#FF00377B" TextWrapping="Wrap" TextAlignment="Left" FontWeight="DemiBold" Margin="10,10"/>
-                <TextBlock Text="Bs 215.00" FontSize="27"  Foreground="#FF00377B" Margin="10,0"/>
+                <TextBlock Text="Bs 215.00" FontSize="27"  Foreground="#FF00377B" Margin="10,0" x:Name="txtPrecio"/>
                 <Label Content="Precio Mensual" Foreground="#FF787878" FontSize="23"/>
                 <Separator Margin="0,10" Background="DarkGray" Height="1"/>
                 <Label Content="Caracteristicas del plan" Foreground="#FF787878" FontSize="23"/>
@@ -33,19 +33,19 @@
                 <Label Content="Agregar Servicios Adicionales" Foreground="#FF787878" FontSize="23"/>
                 <UniformGrid Rows="1" Columns="4" Margin="5,20,5,10">
                     <StackPanel Orientation="Horizontal">
-                        <RadioButton Content="" VerticalAlignment="Center" x:Name="RbtnNetflix"/>
+                        <CheckBox Content="" VerticalAlignment="Center" x:Name="RbtnNetflix" Click="CheckChanged"/>
                         <Image Source="/Assets/Logonetflix.png" Height="30"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-                        <RadioButton Content="" VerticalAlignment="Center" x:Name="RbtnHBO"/>
+                        <CheckBox Content="" VerticalAlignment="Center" x:Name="RbtnHBO"  Click="CheckChanged"/>
                         <Image Source="/Assets/HBO_logo.svg.png" Height="30"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-                        <RadioButton Content="" VerticalAlignment="Center" x:Name="RbtnPrimeVideo"/>
+                        <CheckBox Content="" VerticalAlignment="Center" x:Name="RbtnPrimeVideo"  Click="CheckChanged"/>
                         <Image Source="/Assets/amazonprimelogo.png" Height="30"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-                        <RadioButton Content="" VerticalAlignment="Center" x:Name="RbtnHotPack"/>
+                        <CheckBox Content="" VerticalAlignment="Center" x:Name="RbtnHotPack"  Click="CheckChanged"/>
                         <Image Source="/Assets/HotpackLogo.png" Height="30"/>
                     </StackPanel>
                 </UniformGrid>
@@ -57,22 +57,22 @@
                 </UniformGrid>
 
                 <StackPanel>
-                    <TextBlock Text="Rellene sus datos para comprar" FontSize="27"
+                    <TextBlock Text="Datos de facturacion" FontSize="27"
                                Foreground="#FF00377B" TextWrapping="Wrap" TextAlignment="Left" FontWeight="DemiBold" Margin="10,5"/>
                     <Label Content="Nombre y Apellido" Foreground="#FF787878" FontSize="17" Margin="15,-7"/>
                     <TextBox  x:Name="TbxNombre" Width="300" HorizontalAlignment="Left" Height="28" Margin="15,5"
                               Background="{x:Null}" SelectionBrush="{x:Null}" />
-                    <Label Content="Email" Foreground="#FF787878" FontSize="17" Margin="15,-7"/>
+                    <Label Content="Email" Foreground="#FF787878" FontSize="17" Margin="15,-7" x:Name="txtemail"/>
                     <TextBox  x:Name="TbxEmail" Width="300" HorizontalAlignment="Left" Height="28" Margin="15,5"
-                              Background="{x:Null}" SelectionBrush="{x:Null}" />
+                              Background="{x:Null}" SelectionBrush="{x:Null}" TextChanged="Validacion" />
                     <Label Content="Numero de Telefono" Foreground="#FF787878" FontSize="17" Margin="15,-7"/>
                     <TextBox  x:Name="TbxTelefono" Width="300" HorizontalAlignment="Left" Height="28" Margin="15,5"
                               Background="{x:Null}" SelectionBrush="{x:Null}" />
                     <StackPanel Orientation="Horizontal">
-                        <Border Background="White" CornerRadius="15" Margin="15,5,75,5" BorderThickness="1.5" BorderBrush="#FF00C8FF"  MouseEnter="Mouse_Hover" MouseLeave="Mouse_Leave">
+                        <Border Background="White" CornerRadius="15" Margin="15,5,75,5" BorderThickness="1.5" BorderBrush="#FF00C8FF"  MouseEnter="Mouse_Hover" MouseLeave="Mouse_Leave" MouseLeftButtonUp="Click_Cancel">
                             <Label Content="CANCELAR" Foreground="#FF00C8FF" FontWeight="Black" VerticalAlignment="Center"/>
                         </Border>
-                        <Border Background="White" CornerRadius="15" Margin="75,5,10,5" BorderThickness="1.5" BorderBrush="#FF00C8FF" MouseEnter="Mouse_Hover" MouseLeave="Mouse_Leave">
+                        <Border Background="White" CornerRadius="15" Margin="75,5,10,5" BorderThickness="1.5" BorderBrush="#FF00C8FF" MouseEnter="Mouse_Hover" MouseLeave="Mouse_Leave" MouseLeftButtonUp="Click_Comprar">
                             <Label Content="COMPRAR" Foreground="#FF00C8FF" FontWeight="Black" VerticalAlignment="Center"/>
                         </Border>
                     </StackPanel>

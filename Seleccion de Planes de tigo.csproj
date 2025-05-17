@@ -61,7 +61,9 @@
     <Compile Include="Decorators\PlanDecorator.cs" />
     <Compile Include="Decorators\PrimeVideoDecorator.cs" />
     <Compile Include="Interfaces\Plan.cs" />
+    <Compile Include="ObjetosConcretos\PlanAvanzado.cs" />
     <Compile Include="ObjetosConcretos\PlanBasico.cs" />
+    <Compile Include="ObjetosConcretos\PlanMedio.cs" />
     <Compile Include="Singletons\Navegacion.cs" />
     <Compile Include="UserControls\DetallesA.xaml.cs">
       <DependentUpon>DetallesA.xaml</DependentUpon>

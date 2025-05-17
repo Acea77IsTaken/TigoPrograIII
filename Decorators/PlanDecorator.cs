@@ -12,7 +12,7 @@ namespace Seleccion_de_Planes_de_tigo.Decorators
         protected Plan _plan;
         public PlanDecorator(Plan plan)
         {
-            _plan = plan;
+            this._plan = plan;
         }
 
         public virtual string NombrePlan()
