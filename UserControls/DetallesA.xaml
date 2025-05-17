@@ -69,10 +69,10 @@
                     <TextBox  x:Name="TbxTelefono" Width="300" HorizontalAlignment="Left" Height="28" Margin="15,5"
                       Background="{x:Null}" SelectionBrush="{x:Null}" />
                     <StackPanel Orientation="Horizontal">
-                        <Border Background="White" CornerRadius="15" Margin="15,5,75,5" BorderThickness="1.5" BorderBrush="#FF00C8FF" MouseEnter="Mouse_Hover" MouseLeave="Mouse_Leave">
+                        <Border Background="White" CornerRadius="15" Margin="15,5,75,5" BorderThickness="1.5" BorderBrush="#FF00C8FF" MouseEnter="Mouse_Hover" MouseLeave="Mouse_Leave"  MouseLeftButtonUp="Click_Cancel">
                             <Label Content="CANCELAR" Foreground="#FF00C8FF" FontWeight="Black" VerticalAlignment="Center"/>
                         </Border>
-                        <Border Background="White" CornerRadius="15" Margin="75,5,10,5" BorderThickness="1.5" BorderBrush="#FF00C8FF" MouseEnter="Mouse_Hover" MouseLeave="Mouse_Leave">
+                        <Border Background="White" CornerRadius="15" Margin="75,5,10,5" BorderThickness="1.5" BorderBrush="#FF00C8FF" MouseEnter="Mouse_Hover" MouseLeave="Mouse_Leave"  MouseLeftButtonUp="Click_Comprar">
                             <Label Content="COMPRAR" Foreground="#FF00C8FF" FontWeight="Black" VerticalAlignment="Center"/>
                         </Border>
                     </StackPanel>
